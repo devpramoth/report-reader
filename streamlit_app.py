@@ -5,8 +5,7 @@ import openai
 from llama_index import SimpleDirectoryReader
 import os
 
-
-os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+openai.api_key = st.secrets.openai_key
 
 st.title("Chat with FINANCE Docs")
          
